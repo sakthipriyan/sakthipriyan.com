@@ -9,7 +9,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" type="image/png" href="{{data.base}}/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="{{data.base}}/img/favicon.png">
     {% for style in data.css -%}
     <link rel="stylesheet" media="screen" href="{{data.base}}/css/{{style}}">
     {% endfor -%}
@@ -45,9 +45,133 @@
     </div>
   	  <!-- Begin page content -->
   	  <div class="container" style="padding: 20px 0px 20px 0px">
-  	    @content
+  	    <!-- @content
+        @(post: models.Blog, bc:models.Breadcrumb) -->
+<!-- Begin page content -->
+<div class="row" >
+  <div class="col-md-9">
+    <ol class="breadcrumb">
+  <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+  @for(link <- breadcrumb.links){
+  <li><a href="@link.link">@link.text</a></li>  
+  }
+  <li class="active">@breadcrumb.leaf</li>
+</ol>l
+    <div class="page-header">
+      <h1>@post.title @post.subtitle.map{s => <small> @s </small>}</h1>
+    </div>
+    @Html(post.html.get)
+    <span> 
+      @for(tag <- post.tags){<a href="/tags/@tag.link" alt="@tag.tag" class="btn  btn-default top20 text-danger">
+        <i class="fa fa-tags"></i> @tag.tag 
+      </a> }
+    </span>
+  </div>
+  <div class="col-md-3">
+    <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">About me</h3>
+  </div>
+  <ul class="list-group">
+
+    <li class="list-group-item">Passionate about computer programming, I love to design and develop systems from scratch.</li>
+    <li class="list-group-item">Works in full stack web development, backend services and big data technologies.</li>
+    <li class="list-group-item">Primarily uses Java and Scala. Not only codes, but also writes blog post on them.</li>
+  </ul>
+</div>
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><i class="fa fa-globe"></i> Internet</h3>
+  </div>
+  <div class="panel-body">
+  <a class="btn btn-link" href="https://github.com/spriyan"><i class="fa fa-github-square fa-border fa-2x text-danger"></i></a>
+  <a class="btn btn-link" href="http://in.linkedin.com/in/sakthipriyans"><i class="fa fa-linkedin-square fa-border fa-2x text-primary"></i></a>
+  <a class="btn btn-link" href="https://twitter.com/sakthipriyan"><i class="fa fa-twitter-square fa-border fa-2x text-info"></i></a>
+  <!--<a class="btn btn-link" href="https://facebook.com/sakthipriyans"><i class="fa fa-facebook-square fa-border fa-2x text-primary"></i></a>
+  <a class="btn btn-link" href="https://google.com/+SakthiPriyanH"><i class="fa fa-google-plus-square fa-border fa-2x  text-danger"></i></a>
+   -->
+  </div>
+</div>
+
+
+
+ 
+<div style="height: 300px">
+<a class="twitter-timeline" href="https://twitter.com/sakthipriyan" data-widget-id="427087791114055680">Tweets by @@sakthipriyan</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>         
+  </div>
+</div>
   	  </div>
   	</div>
+
+        <div class="container" style="padding: 20px 0px 20px 0px">
+      
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-default">
+  <div class="panel-body">
+  
+  <span><a href="/edit" class="text-primary"><i class="fa fa-pencil-square-o"></i> Edit </a></span>
+   
+  <span class="text-muted pull-right" title="19:00 Jan 19, 2014 IST"><i class="fa fa-calendar"></i> 2 days ago</span>
+    <h3 class="marginTop0">
+    <a href="/2014/01/19/some-random-post">
+    <i class="fa fa-square-o"></i>
+    Some random post for random user for some random day</a><br/><small> this post is about some random text written on random computer</small> 
+    
+    </h3>
+    <!-- 
+    <p>Hindi is NOT declared as national language and never will be. India has 22 official languages now. Hindi/English is used by the central government organisation.
+    <i class="fa fa-ellipsis-h"></i>
+    </p>-->
+    <span>
+    <a class="btn btn-default pull-right" href="/2014/01/19/some-random-post"><i class="fa fa-link"></i> Read</a>
+      <i class="fa fa-tags"></i> 
+    <a href="/tag/random" class="label label-default">random</a> 
+    <a href="/tag/useless" class="label label-default">useless</a>
+    <a href="/tag/java" class="label label-default">java</a>
+    <a href="/tag/scala" class="label label-default">scala</a>
+    <a href="/tag/j2ee" class="label label-default">j2ee</a>
+    <a href="/tag/world" class="label label-default">world</a>  
+    <a href="/tag/random" class="label label-default">random</a> 
+    <a href="/tag/useless" class="label label-default">useless</a>
+    <a href="/tag/java" class="label label-default">java</a>
+    <a href="/tag/scala" class="label label-default">scala</a>
+    <a href="/tag/j2ee" class="label label-default">j2ee</a>
+    <a href="/tag/world" class="label label-default">world</a>  
+    <a href="/tag/random" class="label label-default">random</a> 
+    <a href="/tag/useless" class="label label-default">useless</a>
+    <a href="/tag/java" class="label label-default">java</a>
+    <a href="/tag/scala" class="label label-default">scala</a>
+    <a href="/tag/j2ee" class="label label-default">j2ee</a>
+    </span>
+  </div> 
+  
+</div>
+  </div>
+  <div class="col-md-4">
+      <div class="thumbnail caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+  </div>
+    <div class="col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+    </div>
+  </div>
   	<div id="footer">
       <div class="container">
   	    <ul class="list-inline pull-right text-muted">

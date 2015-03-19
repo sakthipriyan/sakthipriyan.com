@@ -29,5 +29,8 @@ $( document ).ready(function() {
 				'google-share-dialog-1', 
 				'height=400, width=500,	top='+($(window).height()/2 - 200) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
 	});
-	hljs.initHighlightingOnLoad();
+
+	$('pre code').each(function(i, block) {
+    	hljs.highlightBlock(block);
+	});
 });
