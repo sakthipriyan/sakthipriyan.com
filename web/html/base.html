@@ -50,7 +50,7 @@
     <div class="container" id="page">
       <div class="row">
         <div class="col-md-9">
-        {{content}}
+        {% block content %}  <p>This is the page body.</p>{% endblock %}
         </div>
         <div class="col-md-3">
           <div class="panel panel-primary">
