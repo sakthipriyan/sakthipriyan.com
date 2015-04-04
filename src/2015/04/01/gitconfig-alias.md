@@ -1,11 +1,10 @@
-Git Configuration Short hand
+Git Configuration
 Alias for generally used Git commands
 git, config, version control, .gitconfig, setup
 
-##Following configuration can be used to speed up git usage.
+Following configuration can be used to speed up git usage.
 
-```
-[user]
+<pre><code>[user]
 	name = Sakthi Priyan H
 	email = **************
 [alias]
@@ -18,4 +17,8 @@ git, config, version control, .gitconfig, setup
 	re = rebase
 	st = status
 	tp = push --tags
-```
+</code></pre>
+
+
+<pre><code>print 'hello'
+</code></pre>

@@ -1,51 +1,42 @@
 {% extends "base.html" %}
 {% block content %}
 <span class="text-danger pull-right">
-<i class="fa fa-calendar"></i> Jan 1, 2014
+<i class="fa fa-calendar"></i> {{data.date.strftime('%b %d, %Y')}}
 </span>
 <div class="page-header">
-<h1 class="text-primary">Sample blog post
+<h1 class="text-primary">{{data.title}}
   <small> 
-    to show how blogging should be done
+    {{data.sub_title}}
   </small>
 </h1>
 </div>
 <div class="blog-main">
-<h3>Sub-heading</h3>
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-<pre><code>
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World");
-    }
-}
-</code></pre>
-<p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-<h3>Sub-heading</h3>
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-<ul>
-  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-  <li>Donec id elit non mi porta gravida at eget metus.</li>
-  <li>Nulla vitae elit libero, a pharetra augue.</li>
-</ul>
-<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-<ol>
-  <li>Vestibulum id ligula porta felis euismod semper.</li>
-  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-</ol>
-<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+{{data.html}}
 </div>
 <span> 
 <i class="fa fa-tags"></i>
-<a href="/tags/@tag.link" alt="@tag.tag" class="btn  btn-success btn-xs">Java</a>
-<a href="/tags/@tag.link" alt="@tag.tag" class="btn  btn-success btn-xs">Scala</a>
+{% for tag in data.tags %}
+  <a href="{{tag.href}}" class="btn btn-success btn-xs">{{tag.title}}</a>
+{% endfor %}
 </span>
 <hr/>
+
 <nav>
-<ul class="pager">
-  <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-  <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-</ul>
+  <ul class="pager">
+{% if data.prev is not none %}
+    <li class="previous">
+      <a href="{{data.prev.href}}">
+        <i class="fa fa-arrow-left"></i> {{data.prev.title}}
+      </a>
+    </li>
+{% endif %}
+{% if data.next is not none %}
+    <li class="next">
+      <a href="{{data.next.href}}">
+        {{data.next.title}} <i class="fa fa-arrow-right"></i>
+      </a>
+    </li>
+{% endif %}
+  </ul>
 </nav>
 {% endblock %}
