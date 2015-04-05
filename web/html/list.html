@@ -9,7 +9,7 @@
         <i class="fa fa-calendar"></i> {{item.date.strftime('%b %d, %Y')}}
       </span>
     </td>
-    <td><a href="#" class="list-item">{{item.title}}</a><br/><small>{{item.sub_title}}</small></td>
+    <td><a href="{{item.href}}" class="list-item">{{item.title}}</a><br/><small>{{item.sub_title}}</small></td>
     <td>
       <i class="fa fa-tags"></i> 
       {% for tag in item.tags %}
