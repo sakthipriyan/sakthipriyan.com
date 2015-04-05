@@ -13,13 +13,14 @@
 <div class="blog-main">
 {{data.html}}
 </div>
+<hr/>
+
 <span> 
 <i class="fa fa-tags"></i>
 {% for tag in data.tags %}
-  <a href="{{tag.href}}" class="btn btn-success btn-xs">{{tag.title}}</a>
+  <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
 {% endfor %}
 </span>
-<hr/>
 
 <nav>
   <ul class="pager">

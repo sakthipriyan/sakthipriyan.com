@@ -6,7 +6,7 @@ hello, test, webgen
 ## Sub title of the post
 
 Code which i used to print the scores
-<pre>```
+
 	import urllib2
 	import json
 	import time
@@ -19,7 +19,5 @@ Code which i used to print the scores
 			print new_score
 			score = new_score
 		time.sleep(2)
-```</pre>
-```
-	Score here
-```
+
+Score here

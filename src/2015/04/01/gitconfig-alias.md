@@ -4,10 +4,11 @@ git, config, version control, .gitconfig, setup
 
 Following configuration can be used to speed up git usage.
 
-<pre><code>[user]
+	[user]
 	name = Sakthi Priyan H
 	email = **************
-[alias]
+	
+	[alias]
 	br = branch
 	cm = commit -m
 	ca = commit -a -m
@@ -17,8 +18,3 @@ Following configuration can be used to speed up git usage.
 	re = rebase
 	st = status
 	tp = push --tags
-</code></pre>
-
-
-<pre><code>print 'hello'
-</code></pre>

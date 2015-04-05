@@ -1,52 +1,55 @@
-{% include 'blog.html' %}
+{% extends "base.html" %}
+{% block content %}
+<span class="text-danger pull-right">
+<i class="fa fa-calendar"></i> {{blog.date.strftime('%b %d, %Y')}}
+</span>
+<div class="page-header">
+<h1 class="text-primary">{{blog.title}}
+  <small> 
+    {{blog.sub_title}}
+  </small>
+</h1>
+</div>
+<div class="blog-main">
+{{blog.html}}
+</div>
+<hr/>
+<span> 
+<i class="fa fa-tags"></i>
+{% for tag in blog.tags %}
+  <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
+{% endfor %}
+</span>
+
 <div class="page-header">
   <h1 class="text-primary">Recent blogs</h1>
 </div>
 <div class="row" style="padding-top:20px">
+{% for blog in blogs %}
   <div class="col-md-6">
     <div class="panel panel-default">
       <div class="panel-body">
-        <span class="text-muted pull-right">
-          <i class="fa fa-calendar"></i> Jan 19, 2014
+        <span class="text-danger pull-right">
+          <i class="fa fa-calendar"></i> {{blog.date.strftime('%b %d, %Y')}}
         </span>
         <h3 class="marginTop0">
-          <a href="/2014/01/19/some-random-post">
+          <a href="{{blog.current.href}}">
             <i class="fa fa-square-o"></i>
-            Some random post
+            {{blog.title}}
           </a>
           <br/>
-          <small>this post is about some random text written on random computer</small>
+          <small>{{blog.sub_title}}</small>
         </h3>
         <span>
-          <a class="btn btn-primary pull-right" href="/2014/01/19/some-random-post"><i class="fa fa-link"></i> Read</a>
+          <a class="btn btn-primary pull-right" href="{{blog.current.href}}"><i class="fa fa-link"></i> Read</a>
           <i class="fa fa-tags"></i> 
-          <a href="/tag/random" class="">random</a> 
-          <a href="/tag/useless" class="">useless</a>
+          {% for tag in blog.tags %}
+            <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
+          {% endfor %}
         </span>
       </div> 
     </div>
   </div>
-  <div class="col-md-6">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <span class="text-muted pull-right">
-          <i class="fa fa-calendar"></i> Jan 19, 2014
-        </span>
-        <h3 class="marginTop0">
-          <a href="/2014/01/19/some-random-post">
-            <i class="fa fa-square-o"></i>
-            Some random post
-          </a>
-          <br/>
-          <small>this post is about some random text written on random computer</small>
-        </h3>
-        <span>
-          <a class="btn btn-primary pull-right" href="/2014/01/19/some-random-post"><i class="fa fa-link"></i> Read</a>
-          <i class="fa fa-tags"></i> 
-          <a href="/tag/random" class="">random</a> 
-          <a href="/tag/useless" class="">useless</a>
-        </span>
-      </div> 
-    </div>
-  </div>  
+{% endfor %}
 </div>
+{% endblock %}
