@@ -1,14 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-primary">Tags</h1>
+<hr/>
 <div class="panel panel-default">
-  <div class="panel-heading">
-    <b>Tags</b>
-  </div>
   <div class="panel-body">
-    <a style="font-size:12px" href="#" class="text-warning">Hello</a>
-    <a style="font-size:19px" href="#" class="text-warning">Hello</a>
-    <a style="font-size:12px" href="#" class="text-warning">Hello</a>
-    <a style="font-size:19px" href="#" class="text-info">Hello</a>
-    <a style="font-size:22px" href="#" class="text-info">Hello</a>
-    <a style="font-size:22px" href="#" class="text-success">Hello</a>
-    <a style="font-size:15px" href="#" class="text-success">Hello</a>
+    {% for tag in tags %}
+      <a style="font-size:{{tag.size}}px" href="{{tag.href}}" class="{{ loop.cycle('text-success', 'text-primary', 'text-warning', 'text-info', 'text-danger') }}">{{tag.title}} </a>
+    {% endfor %}
   </div>
-</div>      
+</div>
+{% endblock %}
