@@ -10,7 +10,7 @@
     <title>{{title}} - sakthipriyan.com</title>
     <link rel="shortcut icon" type="image/png" href="{{base_uri}}/img/favicon.png">
     {% for style in css -%}
-    <link rel="stylesheet" media="screen" href="{{base_uri}}/css/{{style}}">
+    <link rel="stylesheet" media="screen" href="{{base_uri}}css/{{style}}">
     {% endfor -%}
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -107,7 +107,7 @@
       </div>
     </footer>
     {% for script in js -%}
-    <script src="{{base_uri}}/js/{{script}}" type="text/javascript"></script>
+    <script src="{{base_uri}}js/{{script}}" type="text/javascript"></script>
     {% endfor -%}
   </body>
 </html>
