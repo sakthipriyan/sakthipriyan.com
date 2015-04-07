@@ -1,11 +1,11 @@
 {
-	"base_dir" : "/root/sakthipriyan.com",
+	"base_dir" : "/home/sakthipriyan/ws/blog/sakthipriyan.com",
 	"web_copy" : ["css", "fonts", "img", "js"],
-	"gen_draft" : false,
-	"base_uri": "https://sakthipriyan.com/",
+	"gen_draft" : true,
+	"base_uri": "file:///home/sakthipriyan/ws/blog/sakthipriyan.com/dist/",
 	"blogs_dir": "",
 	"tags_dir": "tags/",
-	"home_recent_count" : 6,
+	"home_recent_count" : 2,
 	"html" : {
 		"css" : [
 			"bootstrap.min.css",
