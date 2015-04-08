@@ -39,7 +39,20 @@ I was concerned about the server cost and i wanted to reduce the compute time fo
 Now, all the components are in place.
 
 ###Repo
-####
+1. **[webgen](https://github.com/sakthipriyan/webgen)** : It contained all python code required to generate the website.
+2. **[sakthipriyan.com](https://github.com/sakthipriyan/sakthipriyan.com)** : It contains 3 components, 
+	1. Website template - used by the jinja2 and required css/js files.
+	2. Markdown - all blog files in markdown.
+	3. Config - config files used for generating the website.
+
+###Website Generation
+Following set files are generated, when webgen is run.
+
+1. Home page
+2. Blog pages
+3. Tagcloud page
+4. Tags page
+5. Calendar pages
 
 ###Deployment
 Generate the website using the following command.
@@ -47,7 +60,7 @@ Generate the website using the following command.
 	#python webgen.py [location of the config file]
 	python webgen.py ../sakthipriyan.com/conf/local.json
 
-Once the blog is generated it can be easliy deployed over any static webserver like [nginx](http://nginx.org/) or [apache webserver](http://httpd.apache.org/). I prefer nginx for using thread less model.
+Once the blog is generated it can be easliy deployed over any static webserver like [nginx](http://nginx.org/) or [apache webserver](http://httpd.apache.org/). I prefer nginx for being thread less web server.
 
 ###Conclusion
 Though webgen is able to generate website from markdown, it is far from perfect. Lot of things has to be done over coming months, so that it can smartly generate the website.
