@@ -2,7 +2,7 @@
 	"base_dir" : "/root/sakthipriyan.com",
 	"web_copy" : ["css", "fonts", "img", "js"],
 	"gen_draft" : false,
-	"base_uri": "http://sakthipriyan.com/",
+	"base_uri": "/",
 	"blogs_dir": "",
 	"tags_dir": "tags/",
 	"home_recent_count" : 6,
