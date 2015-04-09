@@ -31,7 +31,7 @@ I was concerned about the server cost and i wanted to reduce the compute time fo
 2. *HTML5 + CSS3 + Javascript*: Browser can understand only these 3, No escaping right.
 3. *Twitter [bootstrap](http://getbootstrap.com/) + [jQuery](https://jquery.com/)*: Bootstrap is one of the awesome reponsive UI library available out there and jQuery is required for few of its functionalities.
 4. *[Font-Awesome](http://fortawesome.github.io/Font-Awesome/)* : Just love the font awesome icons over default one that comes along with bootstrap.
-5. *[highlight.js](highlightjs.org)* : Easily customizable javascript library available for code highlighting.
+5. *[highlight.js](https://highlightjs.org)* : Easily customizable javascript library available for code highlighting.
 6. *[Python](https://www.python.org/)* : Moved over to python from jvm langauges, so that i can learn more by using it.
 7. *[Jinja2](http://jinja.pocoo.org)* : Really handy html templating library for python. Comparable to one that comes along with django
 8. *Python [Markdown](https://pypi.python.org/pypi/Markdown)* package is available in python which generates html out of the markdown text. 
