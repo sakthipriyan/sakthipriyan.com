@@ -60,7 +60,7 @@ Generate the website using the following command.
 	#python webgen.py [location of the config file]
 	python webgen.py ../sakthipriyan.com/conf/local.json
 
-Once the blog is generated it can be easliy deployed over any static webserver like [nginx](http://nginx.org/) or [apache webserver](http://httpd.apache.org/). I prefer nginx for being thread less web server.
+Once the blog is generated it can be easily deployed over any static webserver like [nginx](http://nginx.org/) or [apache webserver](http://httpd.apache.org/). I prefer nginx for being thread less web server.
 
 ###Conclusion
 Though webgen is able to generate website from markdown, it is far from perfect. Lot of things has to be done over coming months, so that it can smartly generate the website.
