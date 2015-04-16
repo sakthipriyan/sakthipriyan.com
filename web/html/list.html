@@ -12,12 +12,13 @@
           </time>
       </span>
     </td>
-    <td><a href="{{item.href}}" class="list-item">{{item.title}}</a><br/><small>{{item.sub_title}}</small></td>
     <td>
-      <i class="fa fa-tags"></i> 
+      <a href="{{item.href}}" class="list-item">{{item.title}}</a>
+      <span class="text-muted"> {{item.sub_title}}</span><br>
+      <i class="fa fa-tags"></i>
       {% for tag in item.tags %}
       <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
-      {% endfor %}        
+      {% endfor %}
     </td>
   </tr>
 {% endfor %}
