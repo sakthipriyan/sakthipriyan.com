@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 <span class="text-danger pull-right">
-<i class="fa fa-calendar"></i> {{blog.date.strftime('%b %d, %Y')}}
+  <i class="fa fa-calendar"></i>
+  <time datetime="{{blog.date.strftime('%Y-%m-%d')}}">
+    {{blog.date.strftime('%b %d, %Y')}}
+  </time>
 </span>
 <div class="page-header">
 <h1 class="text-primary">{{blog.title}}
@@ -30,7 +33,10 @@
     <div class="panel panel-default">
       <div class="panel-body">
         <span class="text-danger pull-right">
-          <i class="fa fa-calendar"></i> {{blog.date.strftime('%b %d, %Y')}}
+          <i class="fa fa-calendar"></i>
+            <time datetime="{{blog.date.strftime('%Y-%m-%d')}}">
+              {{blog.date.strftime('%b %d, %Y')}}
+            </time>
         </span>
         <h3 class="marginTop0">
           <a href="{{blog.current.href}}">

@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 <span class="text-danger pull-right">
-<i class="fa fa-calendar"></i> {{data.date.strftime('%b %d, %Y')}}
+  <i class="fa fa-calendar"></i> 
+  <time datetime="{{data.date.strftime('%Y-%m-%d')}}">
+    {{data.date.strftime('%b %d, %Y')}}
+  </time>
 </span>
 <div class="page-header">
 <h1 class="text-primary">{{data.title}}
