@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 class="text-primary">{{title}}</h1>
-<table class="table">
+<div class="page-header">
+  <h1 class="text-primary">{{title}}</h1>
+</div>
+
+<table class="table table-striped">
 {% for item in list.items %}
  <tr>
     <td>
-      <span class="text-danger">
+      <span class="text-success">
         <i class="fa fa-calendar"></i>
           <time datetime="{{item.date.strftime('%Y-%m-%d')}}">
             {{item.date.strftime('%b %d, %Y')}}
@@ -13,12 +16,14 @@
       </span>
     </td>
     <td>
-      <a href="{{item.href}}" class="list-item">{{item.title}}</a>
-      <span class="text-muted"> {{item.sub_title}}</span><br>
-      <i class="fa fa-tags"></i>
-      {% for tag in item.tags %}
-      <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
-      {% endfor %}
+      <span class="list-item">
+        <a href="{{item.href}}" class="list-item">{{item.title}}</a><br/>
+        <span class="text-muted">{{item.sub_title}}</span><br/>
+        <i class="fa fa-tags"></i>
+        {% for tag in item.tags %}
+        <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
+        {% endfor %}
+      </span>
     </td>
   </tr>
 {% endfor %}

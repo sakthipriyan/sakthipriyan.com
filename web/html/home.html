@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<span class="text-danger pull-right">
+<span class="text-success pull-right">
   <i class="fa fa-calendar"></i>
   <time datetime="{{blog.date.strftime('%Y-%m-%d')}}">
     {{blog.date.strftime('%b %d, %Y')}}
@@ -27,35 +27,29 @@
 <div class="page-header">
   <h1 class="text-primary">Recent blogs</h1>
 </div>
-<div class="row" style="padding-top:20px">
-{% for blog in blogs %}
-  <div class="col-md-6">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <span class="text-danger pull-right">
-          <i class="fa fa-calendar"></i>
-            <time datetime="{{blog.date.strftime('%Y-%m-%d')}}">
-              {{blog.date.strftime('%b %d, %Y')}}
-            </time>
-        </span>
-        <h3 class="marginTop0">
-          <a href="{{blog.current.href}}">
-            <i class="fa fa-square-o"></i>
-            {{blog.title}}
-          </a>
-          <br/>
-          <small>{{blog.sub_title}}</small>
-        </h3>
-        <span>
-          <a class="btn btn-primary pull-right" href="{{blog.current.href}}"><i class="fa fa-link"></i> Read</a>
-          <i class="fa fa-tags"></i> 
-          {% for tag in blog.tags %}
-            <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
-          {% endfor %}
-        </span>
-      </div> 
-    </div>
-  </div>
+
+<table class="table table-striped">
+{% for item in blogs %}
+ <tr>
+    <td>
+      <span class="text-success">
+        <i class="fa fa-calendar"></i>
+          <time datetime="{{item.date.strftime('%Y-%m-%d')}}">
+            {{item.date.strftime('%b %d, %Y')}}
+          </time>
+      </span>
+    </td>
+    <td>
+      <span class="list-item">
+        <a href="{{item.href}}" class="list-item">{{item.title}}</a><br/>
+        <span class="text-muted">{{item.sub_title}}</span><br/>
+        <i class="fa fa-tags"></i>
+        {% for tag in item.tags %}
+        <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
+        {% endfor %}
+      </span>
+    </td>
+  </tr>
 {% endfor %}
-</div>
+</table>
 {% endblock %}

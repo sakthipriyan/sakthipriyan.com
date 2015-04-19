@@ -1,12 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 class="text-primary">Tags</h1>
-<hr/>
-<div class="panel panel-default">
-  <div class="panel-body">
-    {% for tag in tags %}
-      <a style="font-size:{{tag.size}}px" href="{{tag.href}}" class="{{ loop.cycle('text-success', 'text-primary', 'text-warning', 'text-info', 'text-danger') }}">{{tag.title}} </a>
-    {% endfor %}
-  </div>
+<div class="page-header">
+  <h1 class="text-primary">Tags</h1>
 </div>
+{% for tag in tags %}
+<a style="font-size:{{tag.size}}px" href="{{tag.href}}" class="{{ loop.cycle('text-success', 'text-primary', 'text-warning', 'text-info', 'text-danger') }}">{{tag.title}} </a>
+{% endfor %}
 {% endblock %}
