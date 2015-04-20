@@ -6,7 +6,7 @@ web crawler, scala, akka, kafka, couchbase, jsoup, big data, design
 There are lot of tools like [nutch](http://nutch.apache.org/), [crawler4j](https://github.com/yasserg/crawler4j) available for web crawling and data extraction. The problem lies in the scalability and usability of the tools. Following design  trying to address these issues.
 
 ###Goals 
-* Ability to scala horizontally by adding more machines.
+* Ability to scale horizontally by adding more machines.
 * Crawl specified sites and pages.
 * Simple API interface to develop extractors.
 * Re-extraction of data in case, if few more fields are required.
