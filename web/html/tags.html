@@ -3,7 +3,9 @@
 <div class="page-header">
   <h1 class="text-primary">Tags</h1>
 </div>
+<nav>
 {% for tag in tags %}
 <a style="font-size:{{tag.size}}px" href="{{tag.href}}" class="{{ loop.cycle('text-success', 'text-primary', 'text-warning', 'text-info', 'text-danger') }}">{{tag.title}} </a>
 {% endfor %}
+</nav>
 {% endblock %}
