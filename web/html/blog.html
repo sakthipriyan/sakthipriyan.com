@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
+<main>
+<article>
+<header>
 <span class="text-success pull-right">
   <i class="fa fa-calendar"></i> 
   <time datetime="{{data.date.strftime('%Y-%m-%d')}}">
@@ -13,18 +16,20 @@
   </small>
 </h1>
 </div>
+</header>
 <div class="blog-main">
 {{data.html}}
 </div>
 <hr/>
 
-<span> 
+<footer>
 <i class="fa fa-tags"></i>
 {% for tag in data.tags %}
   <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
 {% endfor %}
-</span>
-
+</footer>
+</article>
+</main>
 <nav>
   <ul class="pager">
 {% if data.prev is not none %}
@@ -43,4 +48,18 @@
 {% endif %}
   </ul>
 </nav>
+<!-- <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'sakthipriyan';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+ -->
 {% endblock %}
