@@ -4,11 +4,11 @@ playframework, sbt, debug, nexus
 
 ### Unresolved dependency 
 
-I started working on one of the play framework projects in my current company [crayondata](http://crayondata.com). I faced the following issue in local.
+I started working on one of the play framework projects in my [current company](http://crayondata.com). I faced the following issue in local.
 
-	sakthipriyan@Sakthi-Lap:mayaplay-api$ sbt
+	sakthipriyan@Sakthi-Lap:api$ sbt
 	[info] Loading project definition from /home/sakthipriyan/workspace/java/api/project
-	[info] Updating {file:/home/sakthipriyan/workspace/java/api/project/}mayaplay-api-build...
+	[info] Updating {file:/home/sakthipriyan/workspace/java/api/project/}api-build...
 	[info] Resolving sbt-run-support-210#sbt-run-support-210_2.10;0.1-SNAPSHOT ...
 	[warn] 	module not found: sbt-run-support-210#sbt-run-support-210_2.10;0.1-SNAPSHOT
 	[warn] ==== typesafe-ivy-releases: tried
@@ -54,7 +54,7 @@ To upgrade the playframework version, update the project/plugins.sbt file.
 
 #### Original plugins file
 
-	sakthipriyan@Sakthi-Lap:mayaplay-api$ head -n4 project/plugins.sbt 
+	sakthipriyan@Sakthi-Lap:api$ head -n4 project/plugins.sbt 
 	resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 	// The Play plugin
@@ -62,7 +62,7 @@ To upgrade the playframework version, update the project/plugins.sbt file.
 
 #### Updated plugins file
 
-	sakthipriyan@Sakthi-Lap:mayaplay-api$ head -n4 project/plugins.sbt
+	sakthipriyan@Sakthi-Lap:api$ head -n4 project/plugins.sbt
 	resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 	// The Play plugin
