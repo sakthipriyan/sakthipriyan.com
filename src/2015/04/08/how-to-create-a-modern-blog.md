@@ -27,7 +27,7 @@ Initially, I started working with [scala](http://www.scala-lang.org/) [play fram
 I was concerned about the server cost and i wanted to reduce the compute time for serving the blog files. So, decided to go for simple file based solution. Here, both source blog markdown as well as generated websites will be set of files. So, webgen has to generate set of html files from set of markdown files.
 
 ###Tech stack
-1. *[Markdown](daringfireball.net/projects/markdown/)* format is the core of this static **web**site **gen**erator. Easier to create clean html from simple text styles.
+1. *[Markdown](http://daringfireball.net/projects/markdown/)* format is the core of this static **web**site **gen**erator. Easier to create clean html from simple text styles.
 2. *HTML5 + CSS3 + Javascript*: Browser can understand only these 3, No escaping right.
 3. *Twitter [bootstrap](http://getbootstrap.com/) + [jQuery](https://jquery.com/)*: Bootstrap is one of the awesome reponsive UI library available out there and jQuery is required for few of its functionalities.
 4. *[Font-Awesome](http://fortawesome.github.io/Font-Awesome/)* : Just love the font awesome icons over default one that comes along with bootstrap.
