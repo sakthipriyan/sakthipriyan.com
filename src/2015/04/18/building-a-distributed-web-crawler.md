@@ -1,18 +1,18 @@
-Building a scalable distributed web crawler
-which can perform both crawling and data extraction
+#Building a scalable distributed web crawler
+##which can perform both crawling and data extraction
 web crawler, scala, akka, kafka, couchbase, jsoup, big data, design
 
 ###Crawling Website(s)
 There are lot of tools like [nutch](http://nutch.apache.org/), [crawler4j](https://github.com/yasserg/crawler4j) available for web crawling and data extraction. The problem lies in the scalability and usability of the tools. Following design  trying to address these issues.
 
-###Goals 
+###Goals
 * Ability to scale horizontally by adding more machines.
 * Crawl specified sites and pages.
 * Simple API interface to develop extractors.
 * Re-extraction of data in case, if few more fields are required.
 
 ###Tech stack
-* *[scala](http://www.scala-lang.org/)* much cleaner functional-object programming language in JVM. Core project can be developed using Scala. 
+* *[scala](http://www.scala-lang.org/)* much cleaner functional-object programming language in JVM. Core project can be developed using Scala.
 * *[akka](http://akka.io/)* actors are used to crawl and extract data. It provided the higher level abstraction over primitive threads. It has clean DSLs for scala than java due java's language limitations.
 * *[kafka](http://kafka.apache.org/)* is a disk based efficient pub-sub system. Used as queue in this system. Between, Kafka is written in scala.
 * *[couchbase](http://www.couchbase.com/)* is a RAM based fast JSON document store. Is is used for url cache as well as generated json.
@@ -28,17 +28,17 @@ Run the Crawler/Extractor in as many instances as required.
 Crawler will dequeue the url json from queue and checks if the url already cached in couchbase *url bucket* or has to be reextracted. If it is not available, page is fetched via the proxy servers.
 
 Once a page is available, raw page is stored in [AWS S3](http://aws.amazon.com/s3/) and an entry is made into *url bucket*.
-Then, extractor will extract two things, one set of documents and next set of url(s). 
-Data is stored in couchbase *data bucket* and next set of url(s) are checked if it has to be crawled. 
+Then, extractor will extract two things, one set of documents and next set of url(s).
+Data is stored in couchbase *data bucket* and next set of url(s) are checked if it has to be crawled.
 Next set url(s) can also contain, required headers and also can carry data map to next level.
 Then, they are added to the same queue.
 
-In case if the url has to be re extracted, the page is retrieved from s3 and used. 
+In case if the url has to be re extracted, the page is retrieved from s3 and used.
 
 ###Extractor
-For each website, developer has to create single Java or Scala class. 
+For each website, developer has to create single Java or Scala class.
 
-It will contain number of methods, each for different type of pages. Each method will accept a Response object and return a Extract object. 
+It will contain number of methods, each for different type of pages. Each method will accept a Response object and return a Extract object.
 
 Response object consists of, Request object which corresponds to queue json, Response Headers and Response Body. From response object developer can access html dom or even use raw response and handle it as xml or json.
 
@@ -59,21 +59,21 @@ Proxy servers can be used in two different configurations.
 Both in effect uses more number of IPs, to minimize the risk of getting banned by any website.
 
 1. **Anonymous Proxy**
-	
+
 	Tor network can be helpful for crawling a very large site anonymously. But, question on *morality* and *legality* arises.
 	This set up requires HAProxy, Privoyx/Polipo & Tor.
-	
-	HAProxy will be accessed from all crawlers. HAProxy in turn connects to multiple Tor via Polipo/Privoxy. 
+
+	HAProxy will be accessed from all crawlers. HAProxy in turn connects to multiple Tor via Polipo/Privoxy.
 	Here, Polipo/Privoxy converts the http request into socks request which Tor can understand.
-	
-	HAProxy will be running multiple ports and each will be allocated for different sites. 
+
+	HAProxy will be running multiple ports and each will be allocated for different sites.
 	So, each website request is done round robin on Tor clients independently.
 	Moreover, each Tor client will run with Exit nodes at different countries and changes IP every 10 minutes.
 
 2. **Distributed Proxy**
-	
+
 	This will be helpful when we have large pool of dynamic IPs. Say we can create numerous micro instances in AWS.
-	This set up requires HAProxy and Squid. 
+	This set up requires HAProxy and Squid.
 
 	HAProxy runs on relatively larger instance. Each micro instances runs a Squid, which simply forwards the connection to the internet.
 	HAProxy does a round robin to Squid which in turn connects to internet using the instance IPs.

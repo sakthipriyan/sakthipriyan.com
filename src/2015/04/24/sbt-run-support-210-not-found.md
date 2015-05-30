@@ -1,8 +1,8 @@
-sbt-run-support-210#sbt-run-support-210_2.10;0.1-SNAPSHOT
-Fixing unresolved dependency in playframework.
+#sbt-run-support-210#sbt-run-support-210_2.10;0.1-SNAPSHOT
+##Fixing unresolved dependency in playframework.
 playframework, sbt, debug, nexus
 
-### Unresolved dependency 
+### Unresolved dependency
 
 I started working on one of the play framework projects in my [current company](http://crayondata.com). I faced the following issue in local.
 
@@ -54,7 +54,7 @@ To upgrade the playframework version, update the project/plugins.sbt file.
 
 #### Original plugins file
 
-	sakthipriyan@Sakthi-Lap:api$ head -n4 project/plugins.sbt 
+	sakthipriyan@Sakthi-Lap:api$ head -n4 project/plugins.sbt
 	resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 	// The Play plugin
@@ -69,7 +69,7 @@ To upgrade the playframework version, update the project/plugins.sbt file.
 	addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.3.6")
 
 ### Actual Issue
-It seems that SNAPSHOT jar was erroneously published into public releases repository. 
+It seems that SNAPSHOT jar was erroneously published into public releases repository.
 ```Play framework 2.3.5``` had dependency of this erroneously published jar file.
 Apparently people in typesafe deleted the wrongly published denpendency jar later.
 This is why it worked in systems which cached deleted artifact in local.

@@ -1,8 +1,8 @@
-How to create a modern blog?
-using markdown and python
+#How to create a modern blog?
+##using markdown and python
 blog software, webgen, design, python, markdown
 
-Over past few years I had tried various blogging platforms, say Live journal, wordpress (self hosted as well), tumblr, microsoft sharepoint etc., Everyone of these had only browser based editors. I was looking for simple text file based blogging software. I came across [Jekyll](http://jekyllrb.com/). But, instead of learning it, I wondered why don't I create simple one. 
+Over past few years I had tried various blogging platforms, say Live journal, wordpress (self hosted as well), tumblr, microsoft sharepoint etc., Everyone of these had only browser based editors. I was looking for simple text file based blogging software. I came across [Jekyll](http://jekyllrb.com/). But, instead of learning it, I wondered why don't I create simple one.
 
 ###Primary Goals
 
@@ -34,13 +34,13 @@ I was concerned about the server cost and i wanted to reduce the compute time fo
 5. *[highlight.js](https://highlightjs.org)* : Easily customizable javascript library available for code highlighting.
 6. *[Python](https://www.python.org/)* : Moved over to python from jvm langauges, so that i can learn more by using it.
 7. *[Jinja2](http://jinja.pocoo.org)* : Really handy html templating library for python. Comparable to one that comes along with django
-8. *Python [Markdown](https://pypi.python.org/pypi/Markdown)* package is available in python which generates html out of the markdown text. 
+8. *Python [Markdown](https://pypi.python.org/pypi/Markdown)* package is available in python which generates html out of the markdown text.
 
 Now, all the components are in place.
 
 ###Repo
 1. **[webgen](https://github.com/sakthipriyan/webgen)** : It contained all python code required to generate the website.
-2. **[sakthipriyan.com](https://github.com/sakthipriyan/sakthipriyan.com)** : It contains 3 components, 
+2. **[sakthipriyan.com](https://github.com/sakthipriyan/sakthipriyan.com)** : It contains 3 components,
 	1. Website template - used by the jinja2 and required css/js files.
 	2. Markdown - all blog files in markdown.
 	3. Config - config files used for generating the website.

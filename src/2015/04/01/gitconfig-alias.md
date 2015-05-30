@@ -1,5 +1,5 @@
-Git Configuration
-Alias for generally used Git commands
+#Git Configuration
+##Alias for generally used Git commands
 git, config, version control, .gitconfig, setup
 
 Following configuration can be used to speed up git usage.
@@ -7,7 +7,7 @@ Following configuration can be used to speed up git usage.
 	[user]
 	name = Sakthi Priyan H
 	email = **************
-	
+
 	[alias]
 	br = branch
 	cm = commit -m
