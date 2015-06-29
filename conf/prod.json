@@ -1,6 +1,6 @@
 {
 	"base_dir" : "/root/sakthipriyan.com",
-	"web_copy" : ["css", "fonts", "img", "js"],
+	"web_copy" : ["css", "fonts", "img", "js", "resume"],
 	"gen_draft" : false,
 	"base_uri": "/",
 	"blogs_dir": "",
