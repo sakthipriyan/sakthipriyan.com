@@ -31,15 +31,19 @@
         text-transform: uppercase;
       }
 
+      hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
       @media print{
         div.print{ display: none;}
+        a[href]:after { content: none !important;}
       }
 
       @media screen{
         div.print{ margin: 20px;}
       }
-
-
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -52,8 +56,8 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1 text-center">
           <span class="pull-left">Version 5.0</span>
-          http://sakthipriyan.com/resume
-          <span class="pull-right">Jun 28, 2015</span>
+          <a href="http://sakthipriyan.com/resume">http://sakthipriyan.com/resume</a>
+          <span class="pull-right">Jul 4, 2015</span>
         </div>
       </div>
       <div class="row">
@@ -67,8 +71,8 @@
           <h3 class="uppercase">Profile</h3>
         </div>
         <div class="col-md-8">
-          <strong>I want to be a part of a world class team working &#xa;on innovative and technically challenging applications &#xa;which can have profound impact on people/business.<br/>
-Quick &amp; Self Learner with good analytical skills and a can do attitude.
+          <strong>Passion for building high quality software. Quick self learner with good analytical abilities and a can do attitude.
+          Interested in working with world class team on innovative and technically challenging applications &#xa;which can have profound impact on people.
           </strong>
         </div>
       </div>
@@ -78,8 +82,8 @@ Quick &amp; Self Learner with good analytical skills and a can do attitude.
           <h3 class="uppercase">Industry Experience <br/><small>6 years</small></h3>
         </div>
         <div class="col-md-8">
-          <h4><i>Serverside Programmer</i>,
-            Crayon Data,
+          <h4><i>Server Side Programmer</i>,
+            <a href="crayondata.com">Crayon Data</a>,
             <small> Chennai, Singapore.</small>
             <span class="text-muted pull-right">Sep 2013 - Present</span>
           </h4>
@@ -90,13 +94,25 @@ Quick &amp; Self Learner with good analytical skills and a can do attitude.
           <hr/>
           <h4>
             <i>Senior Systems Engineer</i>,
-            Infosys, <small> Chennai, Mysore, Pune. </small>
+            <a href="http://infosys.com">Infosys</a>, <small> Chennai, Pune, Mysore. </small>
             <span class="text-muted pull-right">Jun 2009 - Aug 2013</span>
           </h4>
-          <h5>Client 3, UK Retailer - Insurance Sale Systems.</h5>
-          <h5>Client 2, US Retailer - People Systems. Rated as CRR 1 employee.</h5>
-          <h5>Client 1, US Retailer - Retail Logistics Centre. Awarded Rising Star Award.</h5>
-          <h5>Training - Java Technologies. Secured <strong>5.0/5.0</strong> CGPA.</h5>
+          <h5>
+            Client 3, UK Retailer - Insurance Sale Systems. Client awarded Thank You certificate.
+            <!-- <span class="text-muted pull-right">Jun 2012 - Aug 2013</span> -->
+          </h5>
+          <h5>
+            Client 2, US Retailer - People Systems. Rated as CRR 1 employee.
+            <!-- <span class="text-muted pull-right">Nov 2010 - Apr 2012</span> -->
+          </h5>
+          <h5>
+            Client 1, US Retailer - Retail Logistics Centre. Awarded Rising Star Award.
+            <!-- <span class="text-muted pull-right">Jan 2010 - Aug 2010</span> -->
+          </h5>
+          <h5>
+            Training - Java Technologies. Secured <strong>5.0/5.0</strong> CGPA. 
+            <!-- <span class="text-muted pull-right">Jun 2009 - Dec 2009</span> -->
+          </h5>
         </div>
       </div>
             <hr/>
@@ -105,21 +121,21 @@ Quick &amp; Self Learner with good analytical skills and a can do attitude.
           <h3 class="uppercase">Technical Skills</h3>
         </div>
         <div class="col-md-8">
-          <h5><strong>Java</strong>, <strong>Spring</strong>, <strong>Junit</strong>, Hibernate, JSP, JSTL, JSF, JMeter</h5>
-          <h5>Scala, <strong>Play Framework</strong>, <i>Akka Framework</i>, <b>python</b>, <i>go</i>, linux shell, <i>nodejs</i>, php,
-              <strong>Android</strong>.
+          <h5><strong>Java</strong>, <strong>Spring</strong>, <strong>Junit</strong>, Hibernate, JPA, JSP, JSTL, JSF, Richfaces, Primefaces, JMeter.</h5>
+          <h5>Scala, <strong>Play Framework</strong>, <i>Akka Framework</i>, <b>python</b>, <i>go</i>, linux shell, <i>nodejs</i>, <strong>Android</strong>, php.
           </h5>
-          <h5>Cloud: <strong>Amazon Web Services</strong>, Google App Engine, Digital Ocean, Vultr</h5>
+          <h5>Big data: Hadoop (HDP, Cloudera), Apache Spark, Apache Kafka, talend.</h5>
+          <h5>Cloud: <strong>Amazon Web Services</strong>, Google App Engine, Digital Ocean, Vultr.</h5>
           <h5>Web: HTML, CSS, JavaScript, AJAX, JQuery, Twitter Bootstrap, RESTful/Web services, XML, JSON</h5>
-          <h5>Big data: Hadoop Ecosystem (HDP, Cloudera), Apache Spark, Apache Kafka,talend.</h5>
-          <h5>SCM &amp; Build tools: <strong>git</strong>, svn, clearcase, maven, sbt, gradle, jenkins, Sonatype nexus, ant.</h5>
-          <h5>Web Servers: <strong>Nginx</strong>, Apache Tomcat, IBM Websphere, Apache Web server</h5>
-          <h5>Operating Systems: Ubuntu 14.04, 12.04 &amp; Windows 7, XP</h5>
-          <h5>Databases: <strong>Couchbase</strong>, Elasticsearch, <i>Mongo</i>, Oracle, MySQL, SQLite.</h5>
+          <h5>SCM &amp; Build tools: <strong>git</strong>, maven, sbt, gradle, jenkins, Sonatype nexus, svn, clearcase, ant.</h5>
+          <h5>Web Servers: <strong>Nginx</strong>, Apache Tomcat, IBM Websphere, Apache Web server.</h5>
+          <h5>Operating Systems: Ubuntu 14.04, 12.04 &amp; Windows 7, XP.</h5>
+          <h5>Databases: <strong>Couchbase</strong>, Elasticsearch, <i>Mongo</i>, <strong>MySQL</strong>, SQLite, Oracle, <i>DB2</i>. </h5>
           <h5>
-            Tools: <b>Eclipse</b>, Netbeans, RAD, sublime,
-            bitbucket, github, <strong>confluence</strong>, <strong>jira</strong>, slack.
+            Tools: <b>Eclipse</b>, Netbeans, RAD, sublime, <strong>bitbucket</strong>, <strong>github</strong>, <strong>confluence</strong>, <strong>jira</strong>, slack.
           </h5>
+          <h5>Process: <strong>Agile</strong> (Scrum) methodology, was scrum master, Waterfall methodology.</h5>
+          <h5>Others: Technical leadership skills &amp; experience with guiding junior developers.</h5>
         </div>
       </div>
       <hr/>
@@ -128,13 +144,13 @@ Quick &amp; Self Learner with good analytical skills and a can do attitude.
           <h3 class="uppercase">Education</h3>
         </div>
         <div class="col-md-8">
-          <h4>Coimbatore Institute of Technology, <small>Coimbatore</small><span class="text-muted pull-right">Aug 2005 - May 2009</span></h4>
+          <h4><a href="http://cit.edu.in/">Coimbatore Institute of Technology </a>(Anna University), <small>Coimbatore</small><span class="text-muted pull-right">Aug 2005 - May 2009</span></h4>
           <h5>Bachelor of Engineering (Electronics &amp; Communication Engineering) - <strong>8.03/10.00 CGPA</strong> </h5>
           <h5>Participated and won various awards in inter-college and intra-college events.</h5>
           <h5>Events Manager for Interface2k8, a technical symposium conducted by our college.</h5>
-          <h5>Bosch awarded our final year project, <i>Home Area Networking</i> as the best project in CIT.</h5>
+          <h5>Bosch <a href="http://www.thehindu.com/todays-paper/tp-national/tp-tamilnadu/article88537.ece">awarded</a> our final year project, <i>Home Area Networking</i> as the best project in CIT.</h5>
           <hr/>
-          <h4>St Ann's Higher Secondary School, <small>Tindivanam</small></h4>
+          <h4>St Ann's Higher Secondary School (TN State Board), <small>Tindivanam</small></h4>
           <h5>Class XII -  <strong>93.75%</strong> (Centum in Mathematics and school first in English).<span class="text-muted pull-right">Mar 2005</span></h5>
           <h5>Class X - <strong>91.4%</strong> <span class="text-muted pull-right">Apr 2003</span></h5>
         </div>
@@ -142,15 +158,54 @@ Quick &amp; Self Learner with good analytical skills and a can do attitude.
             <hr/>
       <div class="row">
         <div class="col-md-2 col-md-offset-1">
-          <h3 class="uppercase">Fun side projects</h3>
+          <h3><span class="uppercase">Fun side projects</span> <br><small><a href="https://github.com/sakthipriyan">Github</a></small></h3>
         </div>
         <div class="col-md-8">
-          <h5>Recently created <a href="http://bigdata-tools.org">big data tools</a> website to write about it.<span class="text-muted pull-right">Jun 2015</span></h5>
-          <h5>Created static website generator for my <a href="http://sakthipriyan.com">personal site</a>. <span class="text-muted pull-right">Apr 2015</span></h5>
-          <h5>Earlier wrote Tweetbot services for Raspberry Pi.</h5>
-          <h5>Android apps with GAE backend before that.</h5>
-          <h5>PHP web app for a Quiz event in college was the starter.</h5>
-          <h5>Wrote my first BASIC program.<span class="text-muted pull-right">Apr 1998</span></h5>
+          <h5>
+            Recently created 
+            <a href="http://bigdata-tools.org">big data tools</a> 
+            website to write about it.
+            <span class="text-muted pull-right">Jun 2015</span>
+          </h5>
+          <h5>
+            Created static website generator for my 
+            <a href="http://sakthipriyan.com">personal site</a>. 
+            <span class="text-muted pull-right">Apr 2015</span>
+          </h5>
+          <h5>
+            <a href="https://github.com/sakthipriyan/tirukkural">Developed</a> 
+            <a href="https://en.wikipedia.org/wiki/Tirukku%E1%B9%9Ba%E1%B8%B7">Tirukkural</a> 
+            tweetbots to tweet in 
+            <a href="https://twitter.com/kural_en">English</a> 
+            &amp; 
+            <a href="https://twitter.com/kural_ta">Tamil</a>.
+            <span class="text-muted pull-right">Mar 2013</span>
+          </h5>
+          <h5>
+            <a href="https://github.com/sakthipriyan/powerbot"> Powerbot</a>, 
+            a <a href="https://twitter.com/powerbot_tn">tweetbot</a> to publish electricity status from Raspberry Pi. 
+            <span class="text-muted pull-right">Jan 2013</span>
+          </h5>
+          <h5>
+            Created a simple to do Android app Nool.me.
+            <span class="text-muted pull-right">Jul 2012</span>
+          </h5>
+          <h5>
+            Created my first android app Cricscore with <a href="http://cricscore-api.appspot.com/">GAE backend</a>.
+            <span class="text-muted pull-right">Mar 2011</span>
+          </h5>
+          <h5>
+            Worked on mychoize.com, bookmarking website using LAMP stack.
+            <span class="text-muted pull-right">Dec 2008</span>
+          </h5>
+          <h5>
+            PHP web app for a Quiz event in college was the real starter.
+            <span class="text-muted pull-right">Feb 2008</span>
+          </h5>
+          <h5>
+            Wrote my first BASIC program.
+            <span class="text-muted pull-right">Apr 1998</span>
+          </h5>
         </div>
       </div>
       <hr/>
@@ -159,7 +214,7 @@ Quick &amp; Self Learner with good analytical skills and a can do attitude.
           <h3 class="uppercase">More</h3>
         </div>
         <div class="col-md-8">
-          <h5>An amateur blogger, Interested in reading books, long bike rides and photography.</h5>
+          <h5>An amateur blogger, interested in reading books, photography. Interested in Economics, History &amp; Politics.</h5>
           <h5>Actively participated and served people via Scout, NSS and Rotaract in school and college.</h5>
           <h5>Born <span class="text-muted pull-right">Apr 1988</span></h5>
         </div>
@@ -170,10 +225,23 @@ Quick &amp; Self Learner with good analytical skills and a can do attitude.
           <h3 class="uppercase">Contact</h3>
         </div>
         <div class="col-md-8">
-          <h5><i class="text-muted">Email: </i> <a href="mailto:sakthipriyans@gmail.com" target="_top">sakthipriyans@gmail.com</a></h5>
-          <h5><i class="text-muted">Mobile: </i> +91 9944352635</h5>
-          <h5><i class="text-muted">Website: </i> <a href="http://sakthipriyan.com">http://sakthipriyan.com</a></h5>
-          <h5><i class="text-muted">Address: </i> # 49, Mallipathan Street, Tindivanam, Tamil Nadu, India. PIN - 604001</h5>
+          <h5>
+            <i class="text-muted">Email: </i> 
+            <a href="mailto:sakthipriyans@gmail.com" target="_top">sakthipriyans@gmail.com</a>
+            <small>preferred</small>
+          </h5>
+          <h5>
+            <i class="text-muted">Mobile: </i> 
+            <a href="tel:+919944352635">+91 9944352635</a>
+          </h5>
+          <h5>
+            <i class="text-muted">Website: </i> 
+            <a href="http://sakthipriyan.com">http://sakthipriyan.com</a>
+          </h5>
+          <h5>
+            <i class="text-muted">Address: </i> 
+            # 49, Mallipathan Street, Tindivanam, Tamil Nadu, India. PIN - 604001
+          </h5>
         </div>
       </div>
       <div class="row">
@@ -183,9 +251,7 @@ Quick &amp; Self Learner with good analytical skills and a can do attitude.
             </div>
         </div>
       </div>
-
     </div>
-
     <script src="../js/jquery-1.11.2.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
   </body>
