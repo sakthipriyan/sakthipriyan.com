@@ -30,6 +30,13 @@ $( document ).ready(function() {
 				'height=400, width=500,	top='+($(window).height()/2 - 200) +', left='+$(window).width()/2 +', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
 	});
 
+	$('#linkedin').click(function(e) {
+    e.preventDefault();
+    window.open('https://www.linkedin.com/shareArticle?mini=true&source=sakthipriyan.com&url=' + getLocation() + '&title=' + getTitle(),
+      'linkedin-share-dialog-1',
+      'height=400, width=500,	top=' + ($(window).height() / 2 - 200) + ', left=' + $(window).width() / 2 + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+  	});
+
 	$('pre code').each(function(i, block) {
     	hljs.highlightBlock(block);
 	});
