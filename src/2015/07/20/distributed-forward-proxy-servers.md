@@ -137,4 +137,4 @@ Set upper bound in for loop to twice the number of squid servers to test.
 
 #### Notes
 * We can add as many squid proxy servers as required to distribute the load across IPs.
-* At a advanced level, we can automatically, add Squid nodes, update HAProxy config and reload it.
+* At an advanced level, we can automatically, add Squid nodes, update HAProxy config and reload it.
