@@ -1,6 +1,6 @@
 #Building a scalable distributed web crawler
 ##which can perform both crawling and data extraction
-web crawler, scala, akka, kafka, couchbase, jsoup, big data, design
+web crawler, scala, akka, kafka, couchbase, jsoup, big data, design, distributed, proxy
 
 ###Crawling Website(s)
 There are lot of tools like [nutch](http://nutch.apache.org/), [crawler4j](https://github.com/yasserg/crawler4j) available for web crawling and data extraction. The problem lies in the scalability and usability of the tools. Following design  trying to address these issues.
