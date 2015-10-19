@@ -20,13 +20,27 @@
 <div class="blog-main">
 {{data.html}}
 </div>
-<hr/>
-
 <footer>
 <i class="fa fa-tags"></i>
 {% for tag in data.tags %}
   <a href="{{tag.href}}" class="btn btn-default btn-xs">{{tag.title}}</a>
 {% endfor %}
+<hr/>
+<div>
+    <i class="fa fa-share-alt"></i> &nbsp;
+    <a class="btn btn-default" id="twitter">
+      <i class="fa fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-default" id="linkedin">
+      <i class="fa fa-linkedin"></i> Linkedin
+    </a>
+    <a class="btn btn-default" id="google">
+      <i class="fa fa-google-plus"></i> Google+
+    </a>
+    <a class="btn btn-default" id="facebook">
+      <i class="fa fa-facebook"></i> Facebook
+    </a>
+</div>
 </footer>
 </article>
 </main>
@@ -35,14 +49,14 @@
 {% if data.prev is not none %}
     <li class="previous">
       <a href="{{data.prev.href}}">
-        <i class="fa fa-arrow-left"></i> {{data.prev.title}}
+        <i class="fa fa-angle-left"></i> {{data.prev.title}}
       </a>
     </li>
 {% endif %}
 {% if data.next is not none %}
     <li class="next">
       <a href="{{data.next.href}}">
-        {{data.next.title}} <i class="fa fa-arrow-right"></i>
+        {{data.next.title}} <i class="fa fa-angle-right"></i>
       </a>
     </li>
 {% endif %}

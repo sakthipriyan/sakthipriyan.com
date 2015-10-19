@@ -34,14 +34,14 @@
 {% if list.prev is not none %}
     <li class="previous">
       <a href="{{list.prev.href}}">
-        <i class="fa fa-arrow-left"></i> {{list.prev.title}}
+        <i class="fa fa-angle-left"></i> {{list.prev.title}}
       </a>
     </li>
 {% endif %}
 {% if list.next is not none %}
     <li class="next">
       <a href="{{list.next.href}}">
-        {{list.next.title}} <i class="fa fa-arrow-right"></i>
+        {{list.next.title}} <i class="fa fa-angle-right"></i>
       </a>
     </li>
 {% endif %}
