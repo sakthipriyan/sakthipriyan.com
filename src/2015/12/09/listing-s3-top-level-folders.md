@@ -2,9 +2,9 @@
 ## using simple Python code.
 aws, s3, export, code, boto, python
 
-Some time back I had to export list of top level folder in S3 storage.  
-I used [python](https://www.python.org/) and [boto](https://github.com/boto/boto3) to do this work.  
-I think code is self explanatory.  
+Some time back I had to export list of top level folders in a S3 bucket.  
+I used [python](https://www.python.org/) and [boto](https://github.com/boto/boto3) to do this task.  
+I think following code is self explanatory.  
 
 	from boto.s3.connection import S3Connection
 
@@ -25,7 +25,6 @@ I think code is self explanatory.
 			print '.',
 	
 	print('\n\n Completed. Total folders: ' + count)
-
 
 Above program does two things,
 
