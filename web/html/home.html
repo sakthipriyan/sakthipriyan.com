@@ -40,9 +40,10 @@
         <a href="{{item.href}}" class="list-item">{{item.title}}</a>
         <div class="sub header">{{item.sub_title}}</div>
       </h3>
-        {% for tag in item.tags %}
-        <a href="{{tag.href}}" class="ui label">{{tag.title}}</a>
-        {% endfor %}
+      <i class="tags icon"></i>
+      {% for tag in item.tags %}
+      <a href="{{tag.href}}" class="ui small tag label with topspace">{{tag.title}}</a>
+      {% endfor %}
     </td>
   </tr>
 {% endfor %}
