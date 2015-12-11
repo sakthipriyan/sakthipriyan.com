@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="page-header">
-  <h1 class="text-primary">Tags</h1>
-</div>
+<h1 class="ui header">Tags</h1>
+<div class="ui divider"></div>
 <nav>
 {% for tag in tags %}
-<a style="font-size:{{tag.size}}px" href="{{tag.href}}" class="{{ loop.cycle('text-success', 'text-primary', 'text-warning', 'text-info', 'text-danger') }}">{{tag.title}} </a>
+<a style="font-size:{{tag.size}}px; margin:5px;" href="{{tag.href}}" class="ui label {{ loop.cycle('red','orange','yellow','olive','green','teal','blue','violet','purple','pink','brown','grey','black',) }}">{{tag.title}} </a>
 {% endfor %}
 </nav>
 {% endblock %}
