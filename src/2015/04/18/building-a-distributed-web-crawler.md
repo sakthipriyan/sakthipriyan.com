@@ -92,3 +92,6 @@ This post is based on the experience of developing a scalable distributed web cr
 It has explained things at a higher level of abstractions.
 Hoping that in future, I will be able to contribute the relevant code for larger community benefits.
 Between, this was my *real scala project* and I enjoyed it. You can appreciate Scala better when you come from Java world.
+
+### Appended on *2015/12/12*
+Hurray! Read this, [Crawlpod - open source scalable web crawler](/2015/12/12/crawlpod-open-source-scalable-web-crawler.html)
