@@ -131,4 +131,4 @@ Assumed that mongodb is running somewhere and configured `mongodb.url` in `appli
 * Lot of ideas yet to be implemented to make it easier to use.
 * Need to document `Crawlpod` in its own [site](http://crawlpod.net) as it grows.
 
-Kudos! you read till this point.
+Kudos! you read till this point, just go ahead and share it. Thanks!
