@@ -10,7 +10,7 @@
   <div class="right aligned three wide column">
     <i class="calendar icon"></i>
     <time datetime="{{blog.date.strftime('%Y-%m-%d')}}">
-      {{blog.date.strftime('%Y-%m-%d')}}
+      {{blog.date.strftime('%b %d, %Y')}}
     </time>
   </div>
 </div>
@@ -18,13 +18,30 @@
 <div class="blog-main">
 {{blog.html}}
 </div>
-<span> 
+<div class="ui one column grid">
+  <div class="center aligned column">
+    <i class="share alternate icon"></i>
+    <button class="ui small twitter button" id="twitter">
+      <i class="twitter icon"></i> Twitter
+    </button>
+    <button class="ui small linkedin button" id="linkedin">
+      <i class="linkedin icon"></i> LinkedIn
+    </button>
+    <button class="ui small google plus button" id="google">
+      <i class="google plus icon"></i> Google+
+    </button>
+        <button class="ui small facebook button" id="facebook">
+      <i class="facebook icon"></i> Facebook
+    </button>
+  </div>
+</div>
+<div class="ui divider"></div>
+<span>
   <i class="tags icon"></i>
   {% for tag in blog.tags %}
     <a href="{{tag.href}}" class="ui small tag label">{{tag.title}}</a>
   {% endfor %}
 </span>
-<div class="ui divider"></div>
 <h1 class="ui header">Recent blogs</h1>
 <table class="ui striped table">
 {% for item in blogs %}
