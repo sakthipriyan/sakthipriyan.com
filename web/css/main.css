@@ -1,15 +1,8 @@
-#page {
-  padding: 80px 15px 0;
-}
-
-pre {
-  background: #f8f8f8;
-}
-
-.blog-main {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 15px;
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 18px;
+  border-left: 5px solid #eee;
 }
 
 code {
@@ -19,7 +12,22 @@ code {
   background-color: #f9f2f4;
   border-radius: 4px;
 }
-  
+
+
+pre {
+  background: #f8f8f8;
+}
+
+#page {
+  padding: 80px 15px 0;
+}
+
+.blog-main {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
 .with.topspace {
   margin-top: 10px;
 }
@@ -30,11 +38,4 @@ code {
 
 .without.bottom.margin {
   margin-bottom: 0px;
-}
-
-blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 18px;
-  border-left: 5px solid #eee;
 }
