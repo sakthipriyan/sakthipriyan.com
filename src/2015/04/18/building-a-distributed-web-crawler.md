@@ -93,5 +93,5 @@ It has explained things at a higher level of abstractions.
 Hoping that in future, I will be able to contribute the relevant code for larger community benefits.
 Between, this was my *real scala project* and I enjoyed it. You can appreciate Scala better when you come from Java world.
 
-### Appended on *2015/12/12*
+### Appended on *Dec 12, 2015*
 Hurray! Read this, [Crawlpod - open source scalable web crawler](/2015/12/12/crawlpod-open-source-scalable-web-crawler.html)
