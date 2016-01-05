@@ -37,7 +37,7 @@ In its earlier avatar, Kafka was used for Queue, Couchbase was used for Request 
 
 #### Actors involved
 Now comes the interesting part, Actors.  
-> "All the world's a stage, and all the men and women merely players."  
+> All the world's a stage, and all the men and women merely players.  
 > \- **William Shakespeare**,  *[As You Like It](http://shakespeare.mit.edu/asyoulikeit/full.html)*.
 
 We have following actors with specific responsibility.
