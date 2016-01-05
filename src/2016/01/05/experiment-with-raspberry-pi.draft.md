@@ -7,7 +7,8 @@ I read about Raspberry Pi first in early Q4, 2012.
 At that time, I didn't find a real need to use GPIOs.
 Few weeks later I was totally feed up with the power cuts in my hometown.
 Worse, I couldn't figure out if the situation is improving or not.
-Also, I needed a mechanism to systematically record the ON/OFF data, so that it can be analysed.
+So, I needed a mechanism to systematically record the power ON/OFF data, so that it can be analysed.
+Seems that this can be done with Raspberry Pi. So, started
 
 ### Set up
 
@@ -16,6 +17,7 @@ Also, I needed a mechanism to systematically record the ON/OFF data, so that it 
 
 ### Tweetbot
 #### Powerbot
+
 [Powerbot](https://twitter.com/powerbot_tn)
 
 #### Kuralbot
@@ -58,19 +60,31 @@ Useful, if you are downloading a large file with slower download speed.
 ### Cost Analysis
 
 #### Capital cost
+Components bought by Dec 2012           | Cost
+:-------------------------------------- | ---------:
+Raspberry Pi - Model B - 512 MB Ram     | ₹ 3699.00
+Raspberry Pi Case                       | ₹  274.00
+Samsung ATADU10IBECINU Battery Charger  | ₹  270.00
+USB Flexible Foldable Keyboard          | ₹  275.00
+**Total**                               | ₹ 4518.00
 
-#### Running cost
-* I am using a 5v, 700mA Saymsung charger to power the Raspberry Pi.
+#### Components Notes
+* I used a 16GB class 10 SD card and a RJ45 cable which I had as spare.
+* Since I was using PS2 Keyboard back then, had to buy an USB one.
+
+#### Operating cost
+* I am using a 5v, 700mA Samsung charger to power the Raspberry Pi.
 * It consumes about 5Wh of Power.
 * So, 200 hours of running will consume 1 Unit (1000Wh).
-* In a two month billing cycle, it uses approximately 7.2 units.
-* Last electricity bill, we were charged INR 2.52 per unit.
-* So, running cost is INR 18.14 for two months.
-* For past three years, I had spend INR 326.59 or USD 4.93 at ( 1USD = 66.23INR ).
-This is 18x cheaper than the cost of smallest cloud instance on  [vultr](https://www.vultr.com/pricing/).
-Takes this lazy calculation with a pinch of salt as capital cost is not involved.
+* Last electricity bill, we were charged ₹ 2.52 per unit.
+* So, running cost is ₹ 9.07 per month.
 
-#### Overall
+#### Overall cost
+* Running cost for past 3 years is ₹ 9.07 * 36 = ₹326.52 or $4.91 (at $1 = ₹66.53).
+* Overall cost for past 3 years is ₹ 4518 + ₹ 326.52 = ₹ 4844.52
+* Overall cost per month over 3 years is ₹ 4844.52 / 36 = ₹ 134.57 ($2.02)
+* Overall cost will come down as long as Raspberry Pi continues to work.
+* If it works for five years without failure, overall cost per month will be ₹ 84.37 ($1.27)
 
 ### Footnote
 Once the power situation improved, I ignored the Powerbot.  
