@@ -83,13 +83,13 @@ Let me break the cost part into Capital cost and Operating cost.
 #### Capital cost
 I had bought these components by end of Dec 2012.
 
-Component                               | Cost
-:-------------------------------------- | ---------:
-Raspberry Pi - Model B - 512 MB Ram     | ₹ 3699.00
-Raspberry Pi Case                       | ₹  274.00
-Samsung ATADU10IBECINU Battery Charger  | ₹  270.00
-USB Flexible Foldable Keyboard          | ₹  275.00
-**Total**                               | ₹ 4518.00
+Component                               | Cost  
+:-------------------------------------- | ---------:  
+Raspberry Pi - Model B - 512 MB Ram     | ₹ 3699.00  
+Raspberry Pi Case                       | ₹  274.00  
+Samsung ATADU10IBECINU Battery Charger  | ₹  270.00  
+USB Flexible Foldable Keyboard          | ₹  275.00  
+**Total**                               | ₹ 4518.00  
 
 #### Components Notes
 * I used a 16GB class 10 SD card and a RJ45 cable which I had as spare.
