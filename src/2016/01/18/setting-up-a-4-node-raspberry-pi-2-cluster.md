@@ -44,7 +44,7 @@ This cluster has two connections to outside world.
 #### Overall Cost
 So, overall cost is ₹ 15628.00 + 1069.75 + 2920.00 = ₹ 19617.75 (or $ 289.63 (at $1 = ₹67.64)).  
 This cost list is specific to Indian Market and based on [Amazon.in](http://amazon.in) prices as on Jan 18, 2016.  
-If you are ready, for approx ₹ 20k you can set up 4 node Raspberry Pi 2 cluster.  
+If you are ready, for approx ₹ 20k you can set up a 4 node Raspberry Pi 2 cluster.  
 
 ###  Aesthetics
 * I had chosen all components to have same colour.
