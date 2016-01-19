@@ -6,6 +6,8 @@ raspberry pi, c4rpi, hardware, setup
 Earlier I [talked](/2016/01/11/raspberry-pi-2-setup.html) about, how I set up a single node Raspberry Pi.  
 This is post is about setting up, a 4 node Raspberry Pi 2 cluster *aka* `C4Rpi` based on this external [post](http://makezine.com/projects/build-a-compact-4-node-raspberry-pi-cluster/).
 
+<img class="ui fluid image"  src="/img/posts/rpi2/pic0.jpg">  
+
 ### Components
 Cluster set up can be split into 3 different functionalities.
 
@@ -20,6 +22,17 @@ This cluster has two connections to outside world.
 
 * Power supply cable, that can be connected to the mains power supply.
 * Network cable, that can be connected to LAN.
+
+### Pictures speak more
+#### 4 Raspberry Pi nodes + 1 Power Supply + 1 Network Switch
+<img class="ui fluid image"  src="/img/posts/rpi2/pic1.jpg">
+
+#### With required cables
+<img class="ui fluid image"  src="/img/posts/rpi2/pic2.jpg">  
+*Note*: Black wire and USB cable has to be linked.
+
+#### Full set up with everything connected
+<img class="ui fluid image"  src="/img/posts/rpi2/pic3.jpg">  
 
 ### Bill of Materials
 
@@ -53,5 +66,8 @@ If you are ready, for approx ₹ 20k you can set up a 4 node Raspberry Pi 2 clus
 * In short, `White` everywhere, except one little piece.
 
 ### Footnote
-Later, I will certainly add the photos to this post.  
-Also, I will write about how to set up the required software and test this cluster.
+I will write about how to set up the required software and use this cluster.
+
+### Update on Jan 19, 2016
+* Added new pictures of the setup.
+* Minor edit in footnote.
