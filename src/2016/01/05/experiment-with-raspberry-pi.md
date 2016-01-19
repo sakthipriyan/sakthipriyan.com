@@ -5,7 +5,7 @@ raspberry pi, tweetbot, kuralbot, powerbot, downloader, youtube, torrent, python
 ### Beginning
 I read about Raspberry Pi first in early Q4, 2012.
 At that time, I didn't find a real need to use it.
-Few weeks later I was totally feed up with the power cuts in my hometown.
+Few weeks later I was totally fed up with the power cuts in my hometown.
 Worse, I couldn't figure out if the situation is improving or not.
 So, I needed a mechanism to systematically record the power ON/OFF data, so that it can be analysed.
 I decided to use Raspberry Pi for this and so began my journey with Raspberry Pi.  
