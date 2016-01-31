@@ -99,7 +99,7 @@ Or access it via any software which supports `sftp` from any device.
 
 9. Unplug the USB cable from the Raspberry Pi and Power down the external hard disk setup.
 
-### Note
+### Hardware and OS
 I was using [Raspberry Pi 1 Model B](https://www.raspberrypi.org/products/model-b/) for this setup.  
 It is running Raspbian GNU/Linux 8 (jessie)
 
