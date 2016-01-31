@@ -1,6 +1,6 @@
 # Raspberry Pi 2 benchmarking
 ## using sysbench and Java
-raspberry pi, benchmarking, java, sysbench, code, fibonacci
+raspberry pi, benchmark, java, sysbench, code, fibonacci
 
 ### Benchmarking
 Benchmarking is done on three computers using `sysbench` and `Fibonacci sequence` program in `Java`.
