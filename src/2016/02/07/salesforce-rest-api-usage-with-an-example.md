@@ -232,3 +232,6 @@ Response code `201` is returned in case of insert operation.
 * Other operations such as `insert`, `update`, `delete` are similar to `upsert` using relevant http verb.
 * [Rest API](https://developer.salesforce.com/docs/atlas.en-us.200.0.api_rest.meta/api_rest/intro_what_is_rest_api.htm) approach is right one when number of records involved is low and if it has to be real time.
 * [Bulk API](https://developer.salesforce.com/docs/atlas.en-us.198.0.api_asynch.meta/api_asynch/asynch_api_intro.htm) should be used, if you are dealing with 1000s of records and batch mode.
+
+### Related
+* [Salesforce Bulk API usage with an example](salesforce-bulk-api-usage-with-an-example.html)
