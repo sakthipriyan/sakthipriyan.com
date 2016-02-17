@@ -4,6 +4,12 @@ git, config, version control, .gitconfig, setup
 
 Following configuration can be used to speed up git usage.
 
+### Edit Content
+
+	nano ~/.gitconfig
+
+### Config Content
+
 	[user]
 	name = Sakthi Priyan H
 	email = **************
