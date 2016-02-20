@@ -22,7 +22,12 @@
     <div class="blog-main">
     {{data.html}}
     </div>
-    <footer>
+    <div class="ui divider"></div>
+    <footer>      
+      <h3>Share</h3>
+      <p class="blog-main">
+      Great!! You read till this point, just go ahead and share this post to your followers, collegues and friends. Thanks!
+      </p>
       <div class="ui one column grid">
         <div class="center aligned column">
           <i class="share alternate icon"></i>
@@ -42,11 +47,12 @@
       </div>
       <div class="ui divider"></div>
       <nav>
+        <h3>Tags</h3>
         <i class="tags icon"></i>
         {% for tag in data.tags %}
         <a href="{{tag.href}}" class="ui small tag label with topspace">{{tag.title}}</a>
         {% endfor %}  
-        <div class="ui hidden divider"></div>
+        <h3>Blogs</h3>
         <div class="ui two column grid">
           <div class="left aligned column">
             {% if data.prev is not none %}
@@ -64,6 +70,43 @@
           </div>
         </div>
       </nav>
+      <h3>About Author</h3>
+      <div class="ui segment blue with bg">
+      <div class="ui divided items">
+        <div class="item">
+          <div class="ui small image">
+            <img src="/img/sakthipriyan.jpg">
+          </div>
+          <div class="content">
+            <span class="header">Sakthi Priyan H</span>
+            <div class="meta">
+              <span>Passionate Programmer</span>
+            </div>
+            <div class="description">
+              <p>
+                <ul>
+                  <li>Sakthi Priyan is passionate about building high quality reliable software.</li>
+                  <li>He has vast experience in <b>full stack web</b> since 2006.</li>
+                  <li>He primarily codes in <b>Java</b>, <b>Scala</b> and <b>Python</b>.</li>
+                  <li>He currently works in backend <b>API services</b> and <b>big data</b> technologies.</li>
+                </ul> 
+              </p>
+            </div>
+            <div class="extra">
+              <a href="https://twitter.com/sakthipriyan">
+                <i class="large twitter icon"></i>
+              </a>
+              <a href="https://github.com/sakthipriyan">
+                <i class="large github icon"></i>
+              </a>
+              <a href="http://in.linkedin.com/in/sakthipriyans">
+                <i class="large linkedin icon"></i>
+              </a>
+            </div>
+          </div>
+        </div> 
+      </div>
+      </div>
     </footer>
   </article>
 </main>

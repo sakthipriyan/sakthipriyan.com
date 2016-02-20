@@ -39,3 +39,7 @@ pre {
 .without.bottom.margin {
   margin-bottom: 0px;
 }
+
+.with.bg {
+  background-color: #f8f8ff; 
+}
