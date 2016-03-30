@@ -122,7 +122,7 @@ This is the root directory for the web server.
 
 ### Zero configuration files.
 * Yep! you read it right, G WAN uses directory structure to set up virtual hosts.
-* You can Overriding the defaults, by editing the `init.c_` and `main.c_` samples given in the tar.
+* You can override the defaults, by editing the `init.c_` and `main.c_` samples given in the tar.
 * Virtual hosts can be added by adding folders into top level `127.0.0.1:8080`.
     * 127.0.0.1:8080
         * \#127.0.0.1
