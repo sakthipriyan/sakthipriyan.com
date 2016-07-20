@@ -1,6 +1,6 @@
 # Creating REST API Specification
 ## using Swagger Specification
-api, swagger, documentation, design, cricscore api,
+api, swagger, documentation, design, cricscore api
 
 ### Intro
 
