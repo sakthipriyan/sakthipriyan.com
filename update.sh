@@ -1,5 +1,5 @@
 run=0
-cd /home/sakthipriyan/sakthipriyan.com/
+cd /root/sakthipriyan.com/
 git remote update
 count=`git rev-list HEAD...origin/master | wc -l`
 if [ "$count" -gt "0" ] ; then
@@ -7,7 +7,7 @@ if [ "$count" -gt "0" ] ; then
   git pull
   run=1
 fi
-cd /home/sakthipriyan/webgen/
+cd /root/webgen/
 git remote update
 count=`git rev-list HEAD...origin/master | wc -l`
 if [ "$count" -gt "0" ] ; then
@@ -17,5 +17,5 @@ if [ "$count" -gt "0" ] ; then
 fi
 if [ "$run" -ne "0" ]; then
   python webgen.py ../sakthipriyan.com/conf/prod.json
-  cp -fr /home/sakthipriyan/sakthipriyan.com/dist/* /var/www/sakthipriyan.com/
+  cp -fr /root/sakthipriyan.com/dist/* /var/www/sakthipriyan.com/
 fi
