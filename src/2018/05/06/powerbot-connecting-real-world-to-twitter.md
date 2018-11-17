@@ -91,4 +91,3 @@ Apparently, latest tweets in the account has some issues probably due to hardwar
 * It would have been real fun if powerbot tweeted the ON/OFF time before it happened.
 * At least one of my friend from other part of the town started following this twitter handle to check if I had electricity in my home. :)
 * I did powerbot, before the IoT became famous. It happened in early 2013. Loooooong time back.
-* Test
