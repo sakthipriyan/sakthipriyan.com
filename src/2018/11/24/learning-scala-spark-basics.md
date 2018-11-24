@@ -252,8 +252,8 @@ We have gone through some basic functions available in dataframes.
 
 Spark dataframe supports more number of operations and functions.
 
-### Enjoy playing with Spark
-Expore more and play with the dataframe. You can use `reviews.csv` as well. 
+### Enjoy learning Spark
+Expore more and play with the dataframe. You can use `ratings.csv` as well. 
 
 ### References
 1. [https://spark.apache.org/docs/2.2.0/sql-programming-guide.html](https://spark.apache.org/docs/2.2.0/sql-programming-guide.html)
