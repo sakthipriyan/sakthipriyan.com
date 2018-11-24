@@ -19,7 +19,6 @@ Java 8 installed and available as `java` in command line.
 #### Unpack
 Move both files to same directory.
 
-
 	unzip ml-lastest-small.zip  
 	tar -xvzf spark-2.2.0-bin-hadoop2.7.tgz
 
@@ -236,10 +235,7 @@ Next, we will explode the array and find the count of each genre.
 	+--------------------+-----+
 
 #### That is not all
-We have gone through some functions available in dataframes.  
-Spark dataframe supports more number of operations and functions.
-So for we have covered,
-
+We have gone through some basic functions available in dataframes.  
 * count
 * printSchema
 * show
@@ -254,8 +250,10 @@ So for we have covered,
 * head
 * groupBy
 
+Spark dataframe supports more number of operations and functions.
+
 ### Enjoy playing with Spark
-Expore more and play with the dataframes. You can use `reviews.csv` as well.
+Expore more and play with the dataframe. You can use `reviews.csv` as well. 
 
 ### References
 1. [https://spark.apache.org/docs/2.2.0/sql-programming-guide.html](https://spark.apache.org/docs/2.2.0/sql-programming-guide.html)
