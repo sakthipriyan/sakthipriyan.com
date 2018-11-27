@@ -236,6 +236,7 @@ Next, we will explode the array and find the count of each genre.
 
 #### That is not all
 We have gone through some basic functions available in dataframes.  
+
 * count
 * printSchema
 * show
