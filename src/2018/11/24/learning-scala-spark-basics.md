@@ -35,12 +35,12 @@ Once it is up, you will be able to see,
 	Spark context available as 'sc' (master = local[*], app id = local-1543057723300).
 	Spark session available as 'spark'.
 	Welcome to	
-      ____              __
-     / __/__  ___ _____/ /__
-    _\ \/ _ \/ _ `/ __/  '_/
-   /___/ .__/\_,_/_/ /_/\_\   version 2.2.0
-      /_/
-         
+	  ____              __	
+	 / __/__  ___ _____/ /__
+	 _\ \/ _ \/ _ `/ __/  '_/
+	/___/ .__/\_,_/_/ /_/\_\   version 2.2.0
+	   /_/
+	  
 	Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_161)
 	Type in expressions to have them evaluated.
 	Type :help for more information.
