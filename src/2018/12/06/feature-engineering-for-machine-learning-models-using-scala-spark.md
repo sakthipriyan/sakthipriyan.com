@@ -359,16 +359,16 @@ Once we convert this into map we will be able to easily select it!
 	|-- label: double (nullable = false)
 
 	moviesMergedDF.show(5)
-+-------+--------------------+--------------------+-----------+--------------------+--------+-----+
-|movieId|               title|              genres|genresCount|                tags|tagCount|label|
-+-------+--------------------+--------------------+-----------+--------------------+--------+-----+
-|      1|    Toy Story (1995)|[Animation -> 1.0...|          5|[pixar -> 1.0, fu...|       2|  0.0|
-|      2|      Jumanji (1995)|[Adventure -> 1.0...|          3|[fantasy -> 1.0, ...|       4|  0.0|
-|      3|Grumpier Old Men ...|[Comedy -> 1.0, R...|          2|[old -> 1.0, mold...|       2|  1.0|
-|      5|Father of the Bri...|     [Comedy -> 1.0]|          1|[pregnancy -> 1.0...|       2|  1.0|
-|      7|      Sabrina (1995)|[Comedy -> 1.0, R...|          2|     [remake -> 1.0]|       1|  1.0|
-+-------+--------------------+--------------------+-----------+--------------------+--------+-----+
-only showing top 5 rows
+	+-------+--------------------+--------------------+-----------+--------------------+--------+-----+
+	|movieId|               title|              genres|genresCount|                tags|tagCount|label|
+	+-------+--------------------+--------------------+-----------+--------------------+--------+-----+
+	|      1|    Toy Story (1995)|[Animation -> 1.0...|          5|[pixar -> 1.0, fu...|       2|  0.0|
+	|      2|      Jumanji (1995)|[Adventure -> 1.0...|          3|[fantasy -> 1.0, ...|       4|  0.0|
+	|      3|Grumpier Old Men ...|[Comedy -> 1.0, R...|          2|[old -> 1.0, mold...|       2|  1.0|
+	|      5|Father of the Bri...|     [Comedy -> 1.0]|          1|[pregnancy -> 1.0...|       2|  1.0|
+	|      7|      Sabrina (1995)|[Comedy -> 1.0, R...|          2|     [remake -> 1.0]|       1|  1.0|
+	+-------+--------------------+--------------------+-----------+--------------------+--------+-----+
+	only showing top 5 rows
 
 As you can see now, we have map created from array using udf functions.
 
