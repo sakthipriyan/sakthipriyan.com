@@ -496,6 +496,9 @@ As you can see, I had used dataframe function `na.fill(0.0)` to fill zero in pla
 ### Next: Machine Learning
 We will be using `MultilayerPerceptronClassifier` to train on this dataset. More details to follow. Where we will be selecting features and tuning hyper parameters.
 
+#### Updated on Dec 25, 2018
+Refer [Building machine learning models using scala spark](../../../2018/12/25/building-machine-learning-models-using-scala-spark.html) for Multilayer Perceptron Classifier implementation.
+
 ### Previous: Scala Spark Basics
 If you want to start on Spark, read this one, 
 [https://sakthipriyan.com/2018/11/24/learning-scala-spark-basics.html](https://sakthipriyan.com/2018/11/24/learning-scala-spark-basics.html)
